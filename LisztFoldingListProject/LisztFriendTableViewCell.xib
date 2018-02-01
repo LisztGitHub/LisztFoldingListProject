@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LisztFriendTableViewCell" rowHeight="60" id="KGk-i7-Jjw" customClass="LisztFriendTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0g-5S-bPg">
+                        <rect key="frame" x="10" y="10" width="40" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="H4e-CV-mdj"/>
+                            <constraint firstAttribute="width" constant="40" id="XdE-MC-MyU"/>
+                        </constraints>
+                        <state key="normal" image="test_user"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LisztCoder" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sQI-bl-jZA">
+                        <rect key="frame" x="60" y="10" width="85.5" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                        <color key="textColor" red="1" green="0.2274509804" blue="0.1137254902" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kJ6-Ip-0VK">
+                        <rect key="frame" x="155.5" y="7.5" width="27" height="25"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="25" id="vcB-aJ-hxL"/>
+                        </constraints>
+                        <state key="normal" image="test_vip"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="个人博客:www.lisztcoder.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pYn-Dd-CUM">
+                        <rect key="frame" x="60" y="35.5" width="166" height="14.5"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <color key="textColor" red="0.61568627450000002" green="0.61176470589999998" blue="0.61176470589999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="pYn-Dd-CUM" firstAttribute="leading" secondItem="sQI-bl-jZA" secondAttribute="leading" id="2Ud-El-skh"/>
+                    <constraint firstItem="kJ6-Ip-0VK" firstAttribute="centerY" secondItem="sQI-bl-jZA" secondAttribute="centerY" id="79E-OB-2MA"/>
+                    <constraint firstItem="s0g-5S-bPg" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="8YP-QM-ySE"/>
+                    <constraint firstItem="s0g-5S-bPg" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="10" id="Cd3-Al-Dj3"/>
+                    <constraint firstItem="sQI-bl-jZA" firstAttribute="leading" secondItem="s0g-5S-bPg" secondAttribute="trailing" constant="10" id="ROS-dm-sAM"/>
+                    <constraint firstAttribute="bottom" secondItem="pYn-Dd-CUM" secondAttribute="bottom" constant="10" id="WTS-CU-rPo"/>
+                    <constraint firstItem="kJ6-Ip-0VK" firstAttribute="leading" secondItem="sQI-bl-jZA" secondAttribute="trailing" constant="10" id="gBr-wU-NON"/>
+                    <constraint firstItem="sQI-bl-jZA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="10" id="p4y-dX-0YD"/>
+                </constraints>
+            </tableViewCellContentView>
+            <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+            <point key="canvasLocation" x="25" y="73"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="test_user" width="60" height="60"/>
+        <image name="test_vip" width="27" height="9"/>
+    </resources>
+</document>
